@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.btnOpenHelloForm = new System.Windows.Forms.Button();
             this.btn_Loan = new System.Windows.Forms.Button();
             this.btnPOS = new System.Windows.Forms.Button();
@@ -35,11 +36,16 @@
             this.btnGrade = new System.Windows.Forms.Button();
             this.btnMyCalc = new System.Windows.Forms.Button();
             this.btnMethod = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnOpenHelloForm
             // 
-            this.btnOpenHelloForm.Location = new System.Drawing.Point(26, 66);
+            this.btnOpenHelloForm.Location = new System.Drawing.Point(30, 19);
             this.btnOpenHelloForm.Name = "btnOpenHelloForm";
             this.btnOpenHelloForm.Size = new System.Drawing.Size(75, 23);
             this.btnOpenHelloForm.TabIndex = 0;
@@ -49,7 +55,7 @@
             // 
             // btn_Loan
             // 
-            this.btn_Loan.Location = new System.Drawing.Point(26, 105);
+            this.btn_Loan.Location = new System.Drawing.Point(30, 58);
             this.btn_Loan.Name = "btn_Loan";
             this.btn_Loan.Size = new System.Drawing.Size(75, 23);
             this.btn_Loan.TabIndex = 1;
@@ -59,7 +65,7 @@
             // 
             // btnPOS
             // 
-            this.btnPOS.Location = new System.Drawing.Point(26, 143);
+            this.btnPOS.Location = new System.Drawing.Point(30, 96);
             this.btnPOS.Name = "btnPOS";
             this.btnPOS.Size = new System.Drawing.Size(75, 23);
             this.btnPOS.TabIndex = 2;
@@ -69,7 +75,7 @@
             // 
             // btnStruct
             // 
-            this.btnStruct.Location = new System.Drawing.Point(26, 181);
+            this.btnStruct.Location = new System.Drawing.Point(30, 134);
             this.btnStruct.Name = "btnStruct";
             this.btnStruct.Size = new System.Drawing.Size(127, 23);
             this.btnStruct.TabIndex = 3;
@@ -79,7 +85,7 @@
             // 
             // btnGrade
             // 
-            this.btnGrade.Location = new System.Drawing.Point(26, 220);
+            this.btnGrade.Location = new System.Drawing.Point(30, 173);
             this.btnGrade.Name = "btnGrade";
             this.btnGrade.Size = new System.Drawing.Size(127, 23);
             this.btnGrade.TabIndex = 4;
@@ -89,7 +95,7 @@
             // 
             // btnMyCalc
             // 
-            this.btnMyCalc.Location = new System.Drawing.Point(26, 300);
+            this.btnMyCalc.Location = new System.Drawing.Point(30, 253);
             this.btnMyCalc.Name = "btnMyCalc";
             this.btnMyCalc.Size = new System.Drawing.Size(127, 23);
             this.btnMyCalc.TabIndex = 5;
@@ -99,7 +105,7 @@
             // 
             // btnMethod
             // 
-            this.btnMethod.Location = new System.Drawing.Point(26, 259);
+            this.btnMethod.Location = new System.Drawing.Point(30, 212);
             this.btnMethod.Name = "btnMethod";
             this.btnMethod.Size = new System.Drawing.Size(127, 23);
             this.btnMethod.TabIndex = 6;
@@ -107,21 +113,56 @@
             this.btnMethod.UseVisualStyleBackColor = true;
             this.btnMethod.Click += new System.EventHandler(this.btnMethod_Click);
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(12, 96);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.splitContainer1.Panel1.Controls.Add(this.btnPOS);
+            this.splitContainer1.Panel1.Controls.Add(this.btnMethod);
+            this.splitContainer1.Panel1.Controls.Add(this.btnOpenHelloForm);
+            this.splitContainer1.Panel1.Controls.Add(this.btnMyCalc);
+            this.splitContainer1.Panel1.Controls.Add(this.btn_Loan);
+            this.splitContainer1.Panel1.Controls.Add(this.btnGrade);
+            this.splitContainer1.Panel1.Controls.Add(this.btnStruct);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer1.Panel2.BackgroundImage")));
+            this.splitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.splitContainer1.Size = new System.Drawing.Size(1173, 455);
+            this.splitContainer1.SplitterDistance = 391;
+            this.splitContainer1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Jokerman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(30, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 70);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Home";
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 450);
-            this.Controls.Add(this.btnMethod);
-            this.Controls.Add(this.btnMyCalc);
-            this.Controls.Add(this.btnGrade);
-            this.Controls.Add(this.btnStruct);
-            this.Controls.Add(this.btnPOS);
-            this.Controls.Add(this.btn_Loan);
-            this.Controls.Add(this.btnOpenHelloForm);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(1197, 558);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.splitContainer1);
             this.Name = "frmHome";
             this.Text = "Home";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -134,6 +175,8 @@
         private System.Windows.Forms.Button btnGrade;
         private System.Windows.Forms.Button btnMyCalc;
         private System.Windows.Forms.Button btnMethod;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
