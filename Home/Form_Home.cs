@@ -1,4 +1,5 @@
-﻿using Homework_Hello;
+﻿using _13_Guess_Number;
+using Homework_Hello;
 using Homework_loan;
 using Method;
 using MyCalc;
@@ -63,6 +64,12 @@ namespace Home
         private void btnMyCalc_Click(object sender, EventArgs e)
         {
             Frm_MyCalc fg=new Frm_MyCalc(); 
+            fg.Show();
+        }
+
+        private void btnGNum_Click(object sender, EventArgs e)
+        {
+            Frm_GuessNum fg = new Frm_GuessNum();
             fg.Show();
         }
     }

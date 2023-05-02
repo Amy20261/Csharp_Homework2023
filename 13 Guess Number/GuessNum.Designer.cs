@@ -1,6 +1,6 @@
 ﻿namespace _13_Guess_Number
 {
-    partial class Form1
+    partial class Frm_GuessNum
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGuess = new System.Windows.Forms.Button();
+            this.btnShowNum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,37 +43,38 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Please select number from 1 to 100.";
             // 
-            // button1
+            // btnGuess
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(108, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 45);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Guess";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuess.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuess.Location = new System.Drawing.Point(108, 135);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(165, 45);
+            this.btnGuess.TabIndex = 1;
+            this.btnGuess.Text = "Guess";
+            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
-            // button2
+            // btnShowNum
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(300, 135);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 45);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Show number";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnShowNum.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowNum.Location = new System.Drawing.Point(300, 135);
+            this.btnShowNum.Name = "btnShowNum";
+            this.btnShowNum.Size = new System.Drawing.Size(165, 45);
+            this.btnShowNum.TabIndex = 2;
+            this.btnShowNum.Text = "Show number";
+            this.btnShowNum.UseVisualStyleBackColor = true;
+            this.btnShowNum.Click += new System.EventHandler(this.btnShowNum_Click);
             // 
-            // Form1
+            // Frm_GuessNum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 292);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnShowNum);
+            this.Controls.Add(this.btnGuess);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Frm_GuessNum";
             this.Text = "Guess number";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -82,8 +83,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGuess;
+        private System.Windows.Forms.Button btnShowNum;
     }
 }
 

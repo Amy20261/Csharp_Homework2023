@@ -80,6 +80,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\012 Picture Viewer\12 Picture Viewer.csproj">
+      <Project>{6fefce93-7afe-46c6-aaae-d4eb79d649aa}</Project>
+      <Name>12 Picture Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\08 TicTacToe Game\08 TicTacToe Game.csproj">
+      <Project>{4a988320-f514-4055-b5fd-6f8335c32585}</Project>
+      <Name>08 TicTacToe Game</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\09 NotePad\10 NotePad.csproj">
+      <Project>{b80bebea-8fff-4106-9ff2-7b634ad7283a}</Project>
+      <Name>10 NotePad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\09 Screen Saver\09 Screen Saver.csproj">
+      <Project>{4fb024f4-30b7-4921-b069-aa47a09ca9cd}</Project>
+      <Name>09 Screen Saver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\11 Painter\11 Painter.csproj">
+      <Project>{864da6b7-b8a3-452c-95f7-c32a5612863b}</Project>
+      <Name>11 Painter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\13 Guess Number\13 Guess Number.csproj">
+      <Project>{36511249-2fb9-428d-8cd3-3c8fe686fe6b}</Project>
+      <Name>13 Guess Number</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\14 Alarm clock\14 Alarm clock.csproj">
+      <Project>{26097b96-dfb4-4a9c-b86a-01b57110fcd3}</Project>
+      <Name>14 Alarm clock</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Homework_Hello\01Hello.csproj">
       <Project>{b6ad4b4e-0578-48f3-b7f6-d450dc9e48a8}</Project>
       <Name>01Hello</Name>

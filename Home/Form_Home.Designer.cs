@@ -38,6 +38,7 @@
             this.btnMethod = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGNum = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -121,6 +122,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.splitContainer1.Panel1.Controls.Add(this.btnGNum);
             this.splitContainer1.Panel1.Controls.Add(this.btnPOS);
             this.splitContainer1.Panel1.Controls.Add(this.btnMethod);
             this.splitContainer1.Panel1.Controls.Add(this.btnOpenHelloForm);
@@ -147,6 +149,16 @@
             this.label1.Size = new System.Drawing.Size(163, 70);
             this.label1.TabIndex = 8;
             this.label1.Text = "Home";
+            // 
+            // btnGNum
+            // 
+            this.btnGNum.Location = new System.Drawing.Point(30, 294);
+            this.btnGNum.Name = "btnGNum";
+            this.btnGNum.Size = new System.Drawing.Size(127, 23);
+            this.btnGNum.TabIndex = 7;
+            this.btnGNum.Text = "13 Guess Number";
+            this.btnGNum.UseVisualStyleBackColor = true;
+            this.btnGNum.Click += new System.EventHandler(this.btnGNum_Click);
             // 
             // frmHome
             // 
@@ -177,6 +189,7 @@
         private System.Windows.Forms.Button btnMethod;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGNum;
     }
 }
 
