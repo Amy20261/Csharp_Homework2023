@@ -128,7 +128,6 @@
             this.textNum1.Name = "textNum1";
             this.textNum1.Size = new System.Drawing.Size(100, 22);
             this.textNum1.TabIndex = 5;
-            this.textNum1.Text = "1";
             // 
             // btnPlus
             // 

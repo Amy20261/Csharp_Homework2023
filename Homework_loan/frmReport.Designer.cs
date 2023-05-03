@@ -156,6 +156,17 @@
             this.Enabled = false;
             this.Name = "frmReport";
             this.Text = "Loan Report ";
+            this.Controls.SetChildIndex(this.lab_PMT, 0);
+            this.Controls.SetChildIndex(this.lab_loan_amout, 0);
+            this.Controls.SetChildIndex(this.lab_year, 0);
+            this.Controls.SetChildIndex(this.lan_interest, 0);
+            this.Controls.SetChildIndex(this.text_report_amount, 0);
+            this.Controls.SetChildIndex(this.text_report_year, 0);
+            this.Controls.SetChildIndex(this.text_report_rate, 0);
+            this.Controls.SetChildIndex(this.lab_FV, 0);
+            this.Controls.SetChildIndex(this.btnMail, 0);
+            this.Controls.SetChildIndex(this.textReportPMT, 0);
+            this.Controls.SetChildIndex(this.textReportFV, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

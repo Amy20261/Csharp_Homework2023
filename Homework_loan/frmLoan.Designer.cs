@@ -139,7 +139,7 @@
             this.btnReport.UseVisualStyleBackColor = true;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // frmLoan
+            // FrmLoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,8 +155,9 @@
             this.Controls.Add(this.lan_interest);
             this.Controls.Add(this.lab_year);
             this.Controls.Add(this.lab_loan_amout);
-            this.Name = "frmLoan";
+            this.Name = "FrmLoan";
             this.Text = "貸款金額計算";
+            this.Load += new System.EventHandler(this.FrmLoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

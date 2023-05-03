@@ -13,16 +13,17 @@ namespace Homework_loan
 {
     public partial class frmReport : Form
     {
+        
         public frmReport()
         {
             InitializeComponent();
 
-            FrmLoan fl = new FrmLoan();
-            text_report_amount.Text = fl.pv.ToString();
-            text_report_year.Text = fl.years.ToString();
-            text_report_rate.Text = fl.yearRate.ToString();
-            textReportPMT.Text = fl.result_PMT.ToString();
-            textReportFV.Text = fl.result_FV.ToString();
+            
+            text_report_amount.Text =FrmLoan.pv.ToString();
+            text_report_year.Text = FrmLoan.years.ToString();
+            text_report_rate.Text = FrmLoan.yearRate.ToString();
+            textReportPMT.Text = FrmLoan.result_PMT.ToString();
+            textReportFV.Text = FrmLoan.result_FV.ToString();
         }
 
         private void btnMail_Click(object sender, EventArgs e)
@@ -41,6 +42,5 @@ namespace Homework_loan
             string message = string.Format("maileto:" + email + "Subject:" + subject)+"Body:"+body;
             System.Diagnostics.Process.Start(message);
         }
-
     }
 }

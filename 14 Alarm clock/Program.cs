@@ -16,7 +16,7 @@ namespace _14_Alarm_clock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Alarm());
+            Application.Run(new frmAlarm());
         }
     }
 }

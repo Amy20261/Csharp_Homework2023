@@ -1,6 +1,6 @@
 ﻿namespace _14_Alarm_clock
 {
-    partial class Alarm
+    partial class frmAlarm
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LabTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Hour = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Sec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Min)).BeginInit();
@@ -181,13 +180,13 @@
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Alarm
+            // frmAlarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 243);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Alarm";
+            this.Name = "frmAlarm";
             this.Text = "Alarm";
             this.Load += new System.EventHandler(this.Alarm_Load);
             this.groupBox1.ResumeLayout(false);

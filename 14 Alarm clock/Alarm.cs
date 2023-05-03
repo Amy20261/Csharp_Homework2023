@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace _14_Alarm_clock
 {
-    public partial class Alarm : Form
+    public partial class frmAlarm : Form
     {
-        public Alarm()
+        public frmAlarm()
         {
             InitializeComponent();
             DateTime.Now.ToString();

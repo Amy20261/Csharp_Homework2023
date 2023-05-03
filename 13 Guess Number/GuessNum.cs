@@ -17,11 +17,6 @@ namespace _13_Guess_Number
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
        EnterNum fn= new EnterNum();
 
         private void btnShowNum_Click(object sender, EventArgs e)
@@ -38,11 +33,6 @@ namespace _13_Guess_Number
            
             
             fn.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

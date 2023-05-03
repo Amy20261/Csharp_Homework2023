@@ -121,6 +121,7 @@
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Input student info.";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnInsert
             // 

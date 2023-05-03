@@ -16,8 +16,8 @@ namespace POS
     public partial class frmPOS : Form
     {
 
-        string purchaselist { get; set; }
-        double payment { get; set; }
+        public string purchaselist { get; set; }
+        public double payment { get; set; }
         double cash = 1;
         double credit = 0.9;
         
@@ -35,12 +35,20 @@ namespace POS
             purchaselist = string.Empty;
             payment = 0;
             BeerCount = 0;
+            BeerString= string.Empty;
+            BeerAmount=0;
             TaquilaCount = 0;
+            TaquilaString = string.Empty;
+            TaquilaAmount = 0;
             WhiskyCount = 0;
+            WhiskyString = string.Empty;
+            WhiskyAmount = 0;
             WineCount = 0;
+            WineString = string.Empty;
+            WineAmount = 0;
         }
 
-        double BeerCount;
+        public double BeerCount;
         double BeerPrice=120;
         string BeerString { get; set; }
         public double BeerAmount { get; private set; }
@@ -61,7 +69,7 @@ namespace POS
 
         }
 
-        double TaquilaCount;
+        public double TaquilaCount;
         double TaquilaPrice = 180;        
         string TaquilaString { get; set; }
         public double TaquilaAmount { get; private set; }
@@ -78,7 +86,8 @@ namespace POS
             purchaselist = TaquilaString + Environment.NewLine + BeerString + Environment.NewLine + WhiskyString + Environment.NewLine + WineString;
             textPurchase.Text = purchaselist;
         }
-        double WhiskyCount;
+
+        public double WhiskyCount;
         double WhiskyPrice = 350;
         string WhiskyString { get; set; }
         public double WhiskyAmount { get; private set; }
@@ -96,7 +105,8 @@ namespace POS
             textPurchase.Text = purchaselist;
 
         }
-        double WineCount;
+
+        public double WineCount;
         double WinePrice = 320;
         string WineString { get; set; }
         public double WineAmount { get; private set; }

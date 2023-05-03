@@ -18,47 +18,28 @@ namespace Homework_loan
             
         }
 
-        public double pv;
-        public double years;
-        public double yearRate;
-        public double r;
-        public double n;
-        public double rpn;
-        public double result_PMT;
-        public double result_FV;   
+        public static double pv;
+        public static double years;
+        public static double yearRate;
+        public static double downpayment;
+        public static double r;
+        public static double n;
+        public static double rpn;
+        public static double result_PMT;
+        public static double result_FV;   
             
        
 
         private void bntPMT_Click(object sender, EventArgs e)
         {
-        Double.TryParse(text_loan_amount.Text, out double pv);
-        Double.TryParse(text_interest.Text, out double yearRate);
-        Double.TryParse(text_year.Text, out double years);
-        Decimal.TryParse(text_first_amount.Text, out decimal downpayment);
-
-        r = 1 + yearRate / 100 / 12;
-        n = years * 12;
-        rpn = Math.Pow(r, n);
-
-        //PMT = pv* rpn * (r - 1) / (rpn - 1);
-        result_PMT = pv * rpn * (r - 1) / (rpn - 1);
-
+        
         MessageBox.Show("Payment: " + Math.Round(result_PMT)+ " per month."); 
 
         }
 
         private void btnTotalPayment_Click(object sender, EventArgs e)
         {
-            Double.TryParse(text_loan_amount.Text, out double pv);
-            Double.TryParse(text_interest.Text, out double yearRate);
-            Double.TryParse(text_year.Text, out double years);
-            Decimal.TryParse(text_first_amount.Text, out decimal downpayment);
-
-            r = 1 + yearRate/100/12;
-             n = years * 12;
-             rpn = Math.Pow(r, n);
-            result_PMT = pv * rpn * (r - 1) / (rpn - 1);
-            result_FV = result_PMT*n;
+          
 
             MessageBox.Show("Total Payment: "+Math.Round(result_FV));
         }
@@ -67,6 +48,20 @@ namespace Homework_loan
         {
             frmReport fr=new frmReport();
             fr.Show();
+        }
+
+        private void FrmLoan_Load(object sender, EventArgs e)
+        {
+            pv=Double.Parse(text_loan_amount.Text);
+            yearRate=Double.Parse(text_interest.Text);
+            years=Double.Parse(text_year.Text);
+            downpayment=Double.Parse(text_first_amount.Text);
+
+            r = 1 + yearRate / 100 / 12;
+            n = years * 12;
+            rpn = Math.Pow(r, n);
+            result_PMT =Math.Round( pv * rpn * (r - 1) / (rpn - 1));
+            result_FV = Math.Round(result_PMT * n);
         }
     }
 }
