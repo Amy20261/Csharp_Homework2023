@@ -34,5 +34,10 @@ namespace _13_Guess_Number
             
             fn.Show();
         }
+
+        private void btnGuess_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -52,16 +52,35 @@ namespace Homework_loan
 
         private void FrmLoan_Load(object sender, EventArgs e)
         {
-            pv=Double.Parse(text_loan_amount.Text);
-            yearRate=Double.Parse(text_interest.Text);
-            years=Double.Parse(text_year.Text);
-            downpayment=Double.Parse(text_first_amount.Text);
+            try
+            {
+                pv = Double.Parse(text_loan_amount.Text);
+                yearRate = Double.Parse(text_interest.Text);
+                years = Double.Parse(text_year.Text);
+                downpayment = Double.Parse(text_first_amount.Text);
+            }catch(InvalidCastException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }catch(Exception ex) {
+                MessageBox.Show(ex.Message) ; 
+            }
 
             r = 1 + yearRate / 100 / 12;
             n = years * 12;
             rpn = Math.Pow(r, n);
-            result_PMT =Math.Round( pv * rpn * (r - 1) / (rpn - 1));
-            result_FV = Math.Round(result_PMT * n);
+            try
+            {
+                result_PMT = Math.Round(pv * rpn * (r - 1) / (rpn - 1));
+                result_FV = Math.Round(result_PMT * n);
+            }
+            catch (DivideByZeroException ex)
+            {
+                MessageBox.Show(ex.Message+"餘數不為零????怎會?");
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message) ;
+            }
         }
     }
 }

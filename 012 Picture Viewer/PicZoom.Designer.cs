@@ -39,6 +39,7 @@
             this.picDisplay.Size = new System.Drawing.Size(334, 292);
             this.picDisplay.TabIndex = 1;
             this.picDisplay.TabStop = false;
+            this.picDisplay.Click += new System.EventHandler(this.picDisplay_Click);
             // 
             // PicShow
             // 

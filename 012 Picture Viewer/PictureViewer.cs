@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace _012_Picture_Viewer
 {
     public partial class PictureViewer : Form
@@ -22,15 +23,27 @@ namespace _012_Picture_Viewer
         {
 
         }
-        Object imgLocation;
+        
+        
+        public static string[] files;
+
         private void PictureViewer_Load(object sender, EventArgs e)
         {
-            
+
+            files = GetFiles("\\images");
+            foreach (string file in files)
+            {
+                PictureBox pictureBox = new PictureBox();
+                pictureBox.Image = new Bitmap(file);
+                
+            }
         }
-        
+
+        public string filename;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            imgLocation = pictureBox1.BackgroundImageLayout;
+            filename = "C:\\C\\CHomework\\Homework\\012 Picture Viewer\\bin\\Debug\\cat.jpg";            
             PicShow ps= new PicShow();
             ps.Show();
         }

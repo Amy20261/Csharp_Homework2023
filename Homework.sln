@@ -33,8 +33,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13 Guess Number", "13 Guess
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 Alarm clock", "14 Alarm clock\14 Alarm clock.csproj", "{26097B96-DFB4-4A9C-B86A-01B57110FCD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00Home2", "00Home2\00Home2.csproj", "{B72AD177-2C9A-4514-A98C-2E94F3551EFF}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,10 +99,6 @@ Global
 		{26097B96-DFB4-4A9C-B86A-01B57110FCD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26097B96-DFB4-4A9C-B86A-01B57110FCD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26097B96-DFB4-4A9C-B86A-01B57110FCD3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B72AD177-2C9A-4514-A98C-2E94F3551EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B72AD177-2C9A-4514-A98C-2E94F3551EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B72AD177-2C9A-4514-A98C-2E94F3551EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B72AD177-2C9A-4514-A98C-2E94F3551EFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

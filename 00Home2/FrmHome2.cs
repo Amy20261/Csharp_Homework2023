@@ -27,7 +27,8 @@ namespace _00Home2
         private void OpenHelloForm_Click(object sender, EventArgs e)
         {
             frmHello fh = new frmHello();
-            fh.ShowDialog();
+            fh.MdiParent = this;
+            fh.Show();
         }
 
         private void btnLoan_Click(object sender, EventArgs e)
@@ -64,6 +65,11 @@ namespace _00Home2
         {
             frmAlarm fa=new frmAlarm();
             fa.ShowDialog();
+        }
+
+        private void MainFrm_Paint(object sender, PaintEventArgs e)
+        {
+            this.IsMdiContainer = true;
         }
     }
 }
