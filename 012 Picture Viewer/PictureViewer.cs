@@ -25,16 +25,17 @@ namespace _012_Picture_Viewer
         }
         
         
-        public static string[] files;
+       FileInfo[] files;
 
         private void PictureViewer_Load(object sender, EventArgs e)
         {
-
-            files = GetFiles("\\images");
-            foreach (string file in files)
+            DirectoryInfo dir = new DirectoryInfo("\\images");
+            files = dir.GetFiles();
+            foreach(object file in files)
             {
+                filename = file.ToString();
                 PictureBox pictureBox = new PictureBox();
-                pictureBox.Image = new Bitmap(file);
+                pictureBox.Image = new Bitmap();
                 
             }
         }

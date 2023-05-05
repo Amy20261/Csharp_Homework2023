@@ -30,32 +30,61 @@ namespace MyCalc
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
+            try {
             num1 = double.Parse(textNum1.Text);
-            num2 = double.Parse(textNum2.Text);
+            num2 = double.Parse(textNum2.Text); 
+            }catch(InvalidCastException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             ans = num1 + num2;
             textAns.Text= ans.ToString();
         }
 
         private void Minus_Click(object sender, EventArgs e)
         {
+            try{
             num1 = double.Parse(textNum1.Text);
             num2 = double.Parse(textNum2.Text);
+            }
+            catch (InvalidCastException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             ans = num1 - num2;
             textAns.Text = ans.ToString();
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
+            try{
             num1 = double.Parse(textNum1.Text);
             num2 = double.Parse(textNum2.Text);
+            }
+            catch (InvalidCastException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             ans = num1 * num2;
             textAns.Text = ans.ToString();
         }
 
         private void btnDevide_Click(object sender, EventArgs e)
         {
+            try {
             num1 = double.Parse(textNum1.Text);
             num2 = double.Parse(textNum2.Text);
+            }
+            catch (InvalidCastException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }catch(DivideByZeroException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             ans = num1 / num2;
             textAns.Text = ans.ToString();
         }

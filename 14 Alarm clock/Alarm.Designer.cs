@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LabTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Hour = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Sec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Min)).BeginInit();

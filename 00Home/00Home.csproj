@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4FB024F4-30B7-4921-B069-AA47A09CA9CD}</ProjectGuid>
+    <ProjectGuid>{357648AA-618C-4851-BD97-5D4A6B75EF39}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_09_Screen_Saver</RootNamespace>
-    <AssemblyName>09 Screen Saver</AssemblyName>
+    <RootNamespace>_00Home</RootNamespace>
+    <AssemblyName>00Home</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_ScreenSaver.cs">
+    <Compile Include="frm_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_ScreenSaver.Designer.cs">
-      <DependentUpon>frm_ScreenSaver.cs</DependentUpon>
+    <Compile Include="frm_Home.Designer.cs">
+      <DependentUpon>frm_Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_ScreenSaver.resx">
-      <DependentUpon>frm_ScreenSaver.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Home.resx">
+      <DependentUpon>frm_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +78,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\13 Guess Number\13 Guess Number.csproj">
+      <Project>{36511249-2fb9-428d-8cd3-3c8fe686fe6b}</Project>
+      <Name>13 Guess Number</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\14 Alarm clock\14 Alarm clock.csproj">
+      <Project>{26097b96-dfb4-4a9c-b86a-01b57110fcd3}</Project>
+      <Name>14 Alarm clock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Homework_Hello\01Hello.csproj">
+      <Project>{b6ad4b4e-0578-48f3-b7f6-d450dc9e48a8}</Project>
+      <Name>01Hello</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Homework_loan\02 loan.csproj">
+      <Project>{57e87d72-df88-4575-a7a4-e41b270b5649}</Project>
+      <Name>02 loan</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyCalc\07 MyCalc.csproj">
+      <Project>{2c5e2699-77a5-4b1e-a4f0-369ef398fa06}</Project>
+      <Name>07 MyCalc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS\03 POS.csproj">
+      <Project>{9d7081ec-3d3c-466f-9227-0d638bab72c5}</Project>
+      <Name>03 POS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Student_Struct\04 Student_Struct.csproj">
+      <Project>{0ee1566d-4f05-4ec6-89d9-66f4cb056a03}</Project>
+      <Name>04 Student_Struct</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

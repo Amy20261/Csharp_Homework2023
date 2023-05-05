@@ -33,9 +33,9 @@ namespace Student_Struct
             }
 
         }
-        Student student = new Student();
-
         
+
+        Student student = new Student();
         private void btnSave_Click(object sender, EventArgs e)
         {
             string sName;
@@ -45,14 +45,20 @@ namespace Student_Struct
             sChinese = double.Parse(textChinese.Text);
             sEnglish = double.Parse(textEnglish.Text);
             sMath = double.Parse(textMath.Text);
+            student.Name = sName;
+            student.Chinese = sChinese;
+            student.English = sEnglish;
+            student.Math = sMath;       
+            
             }catch(InvalidCastException ex)
             {
                 MessageBox.Show(ex.Message);
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
-            student.Name = name;
-            student.Chinese = chinese;
-            student.English = english;
-            student.Math = math;            
+            
+                 
 
         }
 
