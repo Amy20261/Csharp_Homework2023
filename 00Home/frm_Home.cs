@@ -1,4 +1,6 @@
-﻿using _13_Guess_Number;
+﻿using _09_Screen_Saver;
+using _11Painter;
+using _13_Guess_Number;
 using _14_Alarm_clock;
 using Homework_Hello;
 using Homework_loan;
@@ -42,16 +44,16 @@ namespace _00Home
 
         private void btnPOS_Click(object sender, EventArgs e)
         {
-            frmPOS fh = new frmPOS();
-            fh.MdiParent = this;
-            fh.Show();
+            frmPOS fp = new frmPOS();
+            fp.MdiParent = this;
+            fp.Show();
         }
 
         private void btn_Struct_Click(object sender, EventArgs e)
         {
-            FrmStruct fh = new FrmStruct();
-            fh.MdiParent = this;
-            fh.Show();
+            FrmStruct fs = new FrmStruct();
+            fs.MdiParent = this;
+            fs.Show();
         }
 
         private void btnCal_Click(object sender, EventArgs e)
@@ -63,9 +65,9 @@ namespace _00Home
 
         private void btnGuessNum_Click(object sender, EventArgs e)
         {
-            Frm_GuessNum fh = new Frm_GuessNum();
-            fh.MdiParent = this;
-            fh.Show();
+            Frm_GuessNum fg = new Frm_GuessNum();
+            fg.MdiParent = this;
+            fg.Show();
         }
 
         private void btnAlarm_Click(object sender, EventArgs e)
@@ -73,6 +75,25 @@ namespace _00Home
             frmAlarm fa= new frmAlarm();
             fa.MdiParent = this;
             fa.Show();
+        }
+
+        private void btnScreenSaver_Click(object sender, EventArgs e)
+        {
+            frm_ScreenSaver fs = new frm_ScreenSaver();        
+            fs.Show();
+        }
+
+        private void btnPainter_Click(object sender, EventArgs e)
+        {
+            frm_Painter fp=new frm_Painter();
+            fp.MdiParent = this;
+            fp.Show();
+        }        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm_ScreenSaver fs=new frm_ScreenSaver();
+            fs.MdiParent = this;
+
         }
     }
 }

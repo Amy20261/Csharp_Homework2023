@@ -35,7 +35,7 @@ namespace _012_Picture_Viewer
             {
                 filename = file.ToString();
                 PictureBox pictureBox = new PictureBox();
-                pictureBox.Image = new Bitmap();
+               // pictureBox.Image = new Bitmap();
                 
             }
         }

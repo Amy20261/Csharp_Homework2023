@@ -30,10 +30,10 @@ namespace _09_Screen_Saver
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            Random r = new Random();
             
-            pictureBox1.Left -=1;
-            pictureBox1.Top -=1;
-           
+            pictureBox1.Left =r.Next(this.Width-163);
+            pictureBox1.Top=r.Next(this.Height-173);         
           
             
         }

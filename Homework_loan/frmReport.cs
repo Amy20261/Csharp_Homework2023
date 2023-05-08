@@ -17,14 +17,10 @@ namespace Homework_loan
         public frmReport()
         {
             InitializeComponent();
-
-            
-            text_report_amount.Text =FrmLoan.pv.ToString();
-            text_report_year.Text = FrmLoan.years.ToString();
-            text_report_rate.Text = FrmLoan.yearRate.ToString();
-            textReportPMT.Text = FrmLoan.result_PMT.ToString();
-            textReportFV.Text = FrmLoan.result_FV.ToString();
+                        
+           
         }
+
 
         private void btnMail_Click(object sender, EventArgs e)
         {
@@ -41,6 +37,15 @@ namespace Homework_loan
             string body = amount+";"+year+";"+rate+";"+PMT+";"+FV+";" ;
             string message = string.Format("maileto:" + email + "Subject:" + subject)+"Body:"+body;
             System.Diagnostics.Process.Start(message);
+        }
+
+        private void frmReport_Load(object sender, EventArgs e)
+        {
+            text_report_amount.Text = FrmLoan.pv.ToString("c0");
+            text_report_year.Text = FrmLoan.years.ToString();
+            text_report_rate.Text = FrmLoan.yearRate.ToString();
+            textReportPMT.Text = FrmLoan.result_PMT.ToString("c0");
+            textReportFV.Text = FrmLoan.result_FV.ToString("c0");
         }
     }
 }

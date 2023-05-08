@@ -93,13 +93,14 @@
             this.Setted.TabIndex = 6;
             this.Setted.Text = "Setted";
             this.Setted.UseVisualStyleBackColor = true;
+            this.Setted.CheckedChanged += new System.EventHandler(this.Setted_CheckedChanged);
             // 
             // Sec
             // 
             this.Sec.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Sec.Location = new System.Drawing.Point(284, 86);
             this.Sec.Maximum = new decimal(new int[] {
-            60,
+            59,
             0,
             0,
             0});
@@ -123,7 +124,7 @@
             this.Min.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Min.Location = new System.Drawing.Point(206, 85);
             this.Min.Maximum = new decimal(new int[] {
-            60,
+            59,
             0,
             0,
             0});
@@ -147,12 +148,7 @@
             this.Hour.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Hour.Location = new System.Drawing.Point(128, 86);
             this.Hour.Maximum = new decimal(new int[] {
-            24,
-            0,
-            0,
-            0});
-            this.Hour.Minimum = new decimal(new int[] {
-            1,
+            23,
             0,
             0,
             0});

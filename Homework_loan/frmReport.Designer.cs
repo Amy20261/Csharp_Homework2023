@@ -57,6 +57,7 @@
             this.text_report_rate.ReadOnly = true;
             this.text_report_rate.Size = new System.Drawing.Size(100, 22);
             this.text_report_rate.TabIndex = 12;
+            this.text_report_rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // text_report_year
             // 
@@ -65,6 +66,7 @@
             this.text_report_year.ReadOnly = true;
             this.text_report_year.Size = new System.Drawing.Size(100, 22);
             this.text_report_year.TabIndex = 11;
+            this.text_report_year.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // text_report_amount
             // 
@@ -74,6 +76,7 @@
             this.text_report_amount.ReadOnly = true;
             this.text_report_amount.Size = new System.Drawing.Size(100, 22);
             this.text_report_amount.TabIndex = 10;
+            this.text_report_amount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lan_interest
             // 
@@ -128,6 +131,7 @@
             this.textReportFV.ReadOnly = true;
             this.textReportFV.Size = new System.Drawing.Size(100, 22);
             this.textReportFV.TabIndex = 16;
+            this.textReportFV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textReportPMT
             // 
@@ -136,6 +140,7 @@
             this.textReportPMT.ReadOnly = true;
             this.textReportPMT.Size = new System.Drawing.Size(100, 22);
             this.textReportPMT.TabIndex = 15;
+            this.textReportPMT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // frmReport
             // 
@@ -153,20 +158,9 @@
             this.Controls.Add(this.lab_year);
             this.Controls.Add(this.lab_loan_amout);
             this.Controls.Add(this.lab_PMT);
-            this.Enabled = false;
             this.Name = "frmReport";
             this.Text = "Loan Report ";
-            this.Controls.SetChildIndex(this.lab_PMT, 0);
-            this.Controls.SetChildIndex(this.lab_loan_amout, 0);
-            this.Controls.SetChildIndex(this.lab_year, 0);
-            this.Controls.SetChildIndex(this.lan_interest, 0);
-            this.Controls.SetChildIndex(this.text_report_amount, 0);
-            this.Controls.SetChildIndex(this.text_report_year, 0);
-            this.Controls.SetChildIndex(this.text_report_rate, 0);
-            this.Controls.SetChildIndex(this.lab_FV, 0);
-            this.Controls.SetChildIndex(this.btnMail, 0);
-            this.Controls.SetChildIndex(this.textReportPMT, 0);
-            this.Controls.SetChildIndex(this.textReportFV, 0);
+            this.Load += new System.EventHandler(this.frmReport_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

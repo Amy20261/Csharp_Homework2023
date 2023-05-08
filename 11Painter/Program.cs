@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _11_Painter
+namespace _11Painter
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace _11_Painter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Painter());
+            Application.Run(new frm_Painter());
         }
     }
 }

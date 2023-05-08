@@ -59,10 +59,10 @@ namespace POS
             
             BeerCount+=1;
             BeerAmount = BeerPrice * BeerCount;
-            BeerString = $"Beer X {BeerCount},beer total amount:{BeerAmount}";
+            BeerString = $"Beer X {BeerCount}, beer total amount: {BeerAmount:c0}";
             
             payment = BeerAmount + TaquilaAmount + WhiskyAmount + WineAmount;
-            labPayment.Text = payment.ToString();
+            labPayment.Text = payment.ToString("c0");
 
             purchaselist = BeerString + Environment.NewLine + TaquilaString + Environment.NewLine + WhiskyString + Environment.NewLine + WineString;
             textPurchase.Text = purchaselist;
@@ -78,10 +78,10 @@ namespace POS
             //Taquila,180
             TaquilaCount+=1;
             TaquilaAmount = TaquilaPrice * TaquilaCount;
-            TaquilaString = $"Taquila X {TaquilaCount},Taquila total amount:{TaquilaAmount}";
+            TaquilaString = $"Taquila X {TaquilaCount}, Taquila total amount: {TaquilaAmount:c0}";
             
             payment = BeerAmount + TaquilaAmount+ WhiskyAmount+ WineAmount; 
-            labPayment.Text = payment.ToString();
+            labPayment.Text = payment.ToString("c0");
 
             purchaselist = TaquilaString + Environment.NewLine + BeerString + Environment.NewLine + WhiskyString + Environment.NewLine + WineString;
             textPurchase.Text = purchaselist;
@@ -96,10 +96,10 @@ namespace POS
             //Whisky,350
             WhiskyCount += 1;
             WhiskyAmount = WhiskyPrice * WhiskyCount;
-            WhiskyString = $"Whisky X {WhiskyCount}, Whisky total amount:{WhiskyAmount}";
+            WhiskyString = $"Whisky X {WhiskyCount}, Whisky total amount: {WhiskyAmount:c0}";
 
             payment = BeerAmount + TaquilaAmount + WhiskyAmount+ WineAmount;
-            labPayment.Text = payment.ToString();
+            labPayment.Text = payment.ToString("c0");
 
             purchaselist = WhiskyString + Environment.NewLine + TaquilaString + Environment.NewLine + BeerString + Environment.NewLine + WineString;
             textPurchase.Text = purchaselist;
@@ -117,10 +117,10 @@ namespace POS
             //wine,320
             WineCount += 1;
             WineAmount = WinePrice * WineCount;
-            WineString = $"Wine X {WineCount}, Wine total amount:{WineAmount}";
+            WineString = $"Wine X {WineCount}, Wine total amount: {WineAmount:c0}";
 
             payment = WineAmount+ BeerAmount + TaquilaAmount + WhiskyAmount;
-            labPayment.Text = payment.ToString();
+            labPayment.Text = payment.ToString("c0");
 
             purchaselist = WineString + Environment.NewLine + WhiskyString + Environment.NewLine + TaquilaString + Environment.NewLine + BeerString;
             textPurchase.Text = purchaselist;
@@ -131,13 +131,23 @@ namespace POS
         private void btnCash_Click(object sender, EventArgs e)
         {
             payment = payment * cash;
-            MessageBox.Show("Total payment:" + payment);
+            if (payment == 0)
+            {
+                MessageBox.Show($"Please purchase a product.");
+            }
+            else {MessageBox.Show($"Total payment:{payment:c0}"); }
+            
         }
 
         private void btnCard_Click(object sender, EventArgs e)
         {
             double disPayment = payment * credit;
-            MessageBox.Show("Total payment:" + payment+"\n Discount payment:"+disPayment);
+            if (payment == 0)
+            {
+                MessageBox.Show($"Please purchase a product.");
+            }
+            else { MessageBox.Show($"Total payment:{payment:c0} \n Discount payment:{disPayment:c0}"); }
+            
         }
     }
 }

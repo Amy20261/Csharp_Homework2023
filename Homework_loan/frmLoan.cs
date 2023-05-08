@@ -33,7 +33,7 @@ namespace Homework_loan
         private void bntPMT_Click(object sender, EventArgs e)
         {
         
-        MessageBox.Show("Payment: " + Math.Round(result_PMT)+ " per month."); 
+        MessageBox.Show($"Payment: {result_PMT:c0} per month."); 
 
         }
 
@@ -41,7 +41,7 @@ namespace Homework_loan
         {
           
 
-            MessageBox.Show("Total Payment: "+Math.Round(result_FV));
+            MessageBox.Show($"Total Payment:{result_FV:c0}");
         }
 
         private void btnReport_Click(object sender, EventArgs e)

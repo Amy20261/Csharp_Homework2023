@@ -38,6 +38,8 @@
             this.btnGuessNum = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAlarm = new System.Windows.Forms.Button();
+            this.btnScreenSaver = new System.Windows.Forms.Button();
+            this.btnPainter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -106,7 +108,7 @@
             // 
             // btnGuessNum
             // 
-            this.btnGuessNum.Location = new System.Drawing.Point(24, 257);
+            this.btnGuessNum.Location = new System.Drawing.Point(24, 492);
             this.btnGuessNum.Name = "btnGuessNum";
             this.btnGuessNum.Size = new System.Drawing.Size(92, 31);
             this.btnGuessNum.TabIndex = 9;
@@ -129,7 +131,7 @@
             // 
             // btnAlarm
             // 
-            this.btnAlarm.Location = new System.Drawing.Point(24, 294);
+            this.btnAlarm.Location = new System.Drawing.Point(24, 529);
             this.btnAlarm.Name = "btnAlarm";
             this.btnAlarm.Size = new System.Drawing.Size(92, 31);
             this.btnAlarm.TabIndex = 12;
@@ -137,6 +139,28 @@
             this.btnAlarm.UseVisualStyleBackColor = true;
             this.btnAlarm.UseWaitCursor = true;
             this.btnAlarm.Click += new System.EventHandler(this.btnAlarm_Click);
+            // 
+            // btnScreenSaver
+            // 
+            this.btnScreenSaver.Location = new System.Drawing.Point(24, 300);
+            this.btnScreenSaver.Name = "btnScreenSaver";
+            this.btnScreenSaver.Size = new System.Drawing.Size(92, 31);
+            this.btnScreenSaver.TabIndex = 14;
+            this.btnScreenSaver.Text = "09 Screen saver";
+            this.btnScreenSaver.UseVisualStyleBackColor = true;
+            this.btnScreenSaver.UseWaitCursor = true;
+            this.btnScreenSaver.Click += new System.EventHandler(this.btnScreenSaver_Click);
+            // 
+            // btnPainter
+            // 
+            this.btnPainter.Location = new System.Drawing.Point(24, 373);
+            this.btnPainter.Name = "btnPainter";
+            this.btnPainter.Size = new System.Drawing.Size(92, 31);
+            this.btnPainter.TabIndex = 15;
+            this.btnPainter.Text = "11 Painter";
+            this.btnPainter.UseVisualStyleBackColor = true;
+            this.btnPainter.UseWaitCursor = true;
+            this.btnPainter.Click += new System.EventHandler(this.btnPainter_Click);
             // 
             // frm_Home
             // 
@@ -146,6 +170,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1204, 591);
+            this.Controls.Add(this.btnPainter);
+            this.Controls.Add(this.btnScreenSaver);
             this.Controls.Add(this.btnAlarm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuessNum);
@@ -177,6 +203,8 @@
         private System.Windows.Forms.Button btnGuessNum;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAlarm;
+        private System.Windows.Forms.Button btnScreenSaver;
+        private System.Windows.Forms.Button btnPainter;
     }
 }
 

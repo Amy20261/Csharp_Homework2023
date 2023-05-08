@@ -20,8 +20,13 @@ namespace _14_Alarm_clock
         }
 
         
-        int Hrs, MM, SS, NowHour,NowMinute,NowSecond;
+        int HH, MM, SS, NowHour,NowMinute,NowSecond;
         SoundPlayer sp = new SoundPlayer();
+
+        private void Setted_CheckedChanged(object sender, EventArgs e)
+        {
+            sp.Stop();
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -32,12 +37,13 @@ namespace _14_Alarm_clock
 
             if (Setted.Checked)
             {                  
-                if (Hrs == NowHour && MM == NowMinute && SS == NowSecond)
+                if (HH == NowHour && MM == NowMinute && SS == NowSecond)
                 {
                     try
                     {
                         sp.SoundLocation = "test.wav";
                         sp.Play();
+                        MessageBox.Show("Ring. You have to unsetted the alarm.");
 
                     }catch(Exception ex)
                     {
@@ -45,16 +51,13 @@ namespace _14_Alarm_clock
                     }
                 }
             }
-            else
-            {
-                sp.Stop();
-            }
+            
 
         }
 
         private void Hour_ValueChanged(object sender, EventArgs e)
         {
-            Hrs = int.Parse(Hour.Value.ToString());
+            HH = int.Parse(Hour.Value.ToString());
         }
 
         private void Min_ValueChanged(object sender, EventArgs e)

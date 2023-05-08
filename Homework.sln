@@ -25,8 +25,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09 Screen Saver", "09 Scree
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10 NotePad", "09 NotePad\10 NotePad.csproj", "{B80BEBEA-8FFF-4106-9FF2-7B634AD7283A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11 Painter", "11 Painter\11 Painter.csproj", "{864DA6B7-B8A3-452C-95F7-C32A5612863B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12 Picture Viewer", "012 Picture Viewer\12 Picture Viewer.csproj", "{6FEFCE93-7AFE-46C6-AAAE-D4EB79D649AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13 Guess Number", "13 Guess Number\13 Guess Number.csproj", "{36511249-2FB9-428D-8CD3-3C8FE686FE6B}"
@@ -34,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 Alarm clock", "14 Alarm clock\14 Alarm clock.csproj", "{26097B96-DFB4-4A9C-B86A-01B57110FCD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00Home", "00Home\00Home.csproj", "{357648AA-618C-4851-BD97-5D4A6B75EF39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11Painter", "11Painter\11Painter.csproj", "{3D864F8C-44A7-4F7D-A7D0-5BC074B541A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,10 +85,6 @@ Global
 		{B80BEBEA-8FFF-4106-9FF2-7B634AD7283A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B80BEBEA-8FFF-4106-9FF2-7B634AD7283A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B80BEBEA-8FFF-4106-9FF2-7B634AD7283A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{864DA6B7-B8A3-452C-95F7-C32A5612863B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{864DA6B7-B8A3-452C-95F7-C32A5612863B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{864DA6B7-B8A3-452C-95F7-C32A5612863B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{864DA6B7-B8A3-452C-95F7-C32A5612863B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FEFCE93-7AFE-46C6-AAAE-D4EB79D649AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6FEFCE93-7AFE-46C6-AAAE-D4EB79D649AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEFCE93-7AFE-46C6-AAAE-D4EB79D649AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,6 +101,10 @@ Global
 		{357648AA-618C-4851-BD97-5D4A6B75EF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{357648AA-618C-4851-BD97-5D4A6B75EF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{357648AA-618C-4851-BD97-5D4A6B75EF39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D864F8C-44A7-4F7D-A7D0-5BC074B541A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D864F8C-44A7-4F7D-A7D0-5BC074B541A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D864F8C-44A7-4F7D-A7D0-5BC074B541A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D864F8C-44A7-4F7D-A7D0-5BC074B541A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

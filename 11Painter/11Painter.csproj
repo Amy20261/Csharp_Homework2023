@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{864DA6B7-B8A3-452C-95F7-C32A5612863B}</ProjectGuid>
+    <ProjectGuid>{3D864F8C-44A7-4F7D-A7D0-5BC074B541A0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_11_Painter</RootNamespace>
-    <AssemblyName>11 Painter</AssemblyName>
+    <RootNamespace>_11Painter</RootNamespace>
+    <AssemblyName>11Painter</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Painter.cs">
+    <Compile Include="frm_Painter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Painter.Designer.cs">
-      <DependentUpon>Painter.cs</DependentUpon>
+    <Compile Include="frm_Painter.Designer.cs">
+      <DependentUpon>frm_Painter.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Painter.resx">
-      <DependentUpon>Painter.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Painter.resx">
+      <DependentUpon>frm_Painter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

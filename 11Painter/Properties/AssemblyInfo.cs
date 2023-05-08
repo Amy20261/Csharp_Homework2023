@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("11 Painter")]
+[assembly: AssemblyTitle("11Painter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("11 Painter")]
+[assembly: AssemblyProduct("11Painter")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-[assembly: Guid("864da6b7-b8a3-452c-95f7-c32a5612863b")]
+[assembly: Guid("3d864f8c-44a7-4f7d-a7d0-5bc074b541a0")]
 
 // 組件的版本資訊由下列四個值所組成: 
 //

@@ -80,6 +80,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\09 Screen Saver\09 Screen Saver.csproj">
+      <Project>{4fb024f4-30b7-4921-b069-aa47a09ca9cd}</Project>
+      <Name>09 Screen Saver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\11Painter\11Painter.csproj">
+      <Project>{3d864f8c-44a7-4f7d-a7d0-5bc074b541a0}</Project>
+      <Name>11Painter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\13 Guess Number\13 Guess Number.csproj">
       <Project>{36511249-2fb9-428d-8cd3-3c8fe686fe6b}</Project>
       <Name>13 Guess Number</Name>

@@ -1,6 +1,6 @@
-﻿namespace _11_Painter
+﻿namespace _11Painter
 {
-    partial class Painter
+    partial class frm_Painter
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -28,66 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnColor = new System.Windows.Forms.Button();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(712, 438);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
-            // 
             // btnColor
             // 
-            this.btnColor.Location = new System.Drawing.Point(717, 12);
+            this.btnColor.Location = new System.Drawing.Point(669, 42);
             this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(80, 43);
-            this.btnColor.TabIndex = 1;
-            this.btnColor.Text = "顏色";
+            this.btnColor.Size = new System.Drawing.Size(75, 23);
+            this.btnColor.TabIndex = 0;
+            this.btnColor.Text = "Color Dialog";
             this.btnColor.UseVisualStyleBackColor = true;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
-            // textBox1
+            // pictureBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(719, 61);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(78, 41);
-            this.textBox1.TabIndex = 2;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(669, 71);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 49);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(735, 124);
+            this.trackBar1.Location = new System.Drawing.Point(683, 126);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(45, 314);
-            this.trackBar1.TabIndex = 3;
+            this.trackBar1.Size = new System.Drawing.Size(45, 264);
+            this.trackBar1.TabIndex = 2;
+            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.trackBar1.Value = 3;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // Painter
+            // frm_Painter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.btnColor);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Painter";
+            this.Controls.Add(this.btnColor);
+            this.Name = "frm_Painter";
             this.Text = "Painter";
-            this.Load += new System.EventHandler(this.Painter_Load);
+            this.Load += new System.EventHandler(this.frm_Painter_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frm_Painter_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frm_Painter_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
@@ -97,10 +87,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnColor;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TrackBar trackBar1;
     }
 }

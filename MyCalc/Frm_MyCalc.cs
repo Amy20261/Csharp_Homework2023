@@ -38,7 +38,7 @@ namespace MyCalc
                 MessageBox.Show(ex.Message);
             }
             ans = num1 + num2;
-            textAns.Text= ans.ToString();
+            textAns.Text= ans.ToString("N");
         }
 
         private void Minus_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace MyCalc
                 MessageBox.Show(ex.Message);
             }
             ans = num1 - num2;
-            textAns.Text = ans.ToString();
+            textAns.Text = ans.ToString("N");
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace MyCalc
                 MessageBox.Show(ex.Message);
             }
             ans = num1 * num2;
-            textAns.Text = ans.ToString();
+            textAns.Text = ans.ToString("N");
         }
 
         private void btnDevide_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace MyCalc
                 MessageBox.Show(ex.Message);
             }
             ans = num1 / num2;
-            textAns.Text = ans.ToString();
+            textAns.Text = ans.ToString("N");
         }
     }
 }
