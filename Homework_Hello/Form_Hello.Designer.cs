@@ -45,7 +45,8 @@
             // 
             this.lab_cName.AutoSize = true;
             this.lab_cName.BackColor = System.Drawing.Color.Transparent;
-            this.lab_cName.Location = new System.Drawing.Point(154, 62);
+            this.lab_cName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lab_cName.Location = new System.Drawing.Point(86, 134);
             this.lab_cName.Name = "lab_cName";
             this.lab_cName.Size = new System.Drawing.Size(32, 12);
             this.lab_cName.TabIndex = 0;
@@ -53,14 +54,14 @@
             // 
             // text_cname
             // 
-            this.text_cname.Location = new System.Drawing.Point(214, 62);
+            this.text_cname.Location = new System.Drawing.Point(146, 134);
             this.text_cname.Name = "text_cname";
             this.text_cname.Size = new System.Drawing.Size(100, 22);
             this.text_cname.TabIndex = 2;
             // 
             // text_ename
             // 
-            this.text_ename.Location = new System.Drawing.Point(214, 113);
+            this.text_ename.Location = new System.Drawing.Point(146, 162);
             this.text_ename.Name = "text_ename";
             this.text_ename.Size = new System.Drawing.Size(100, 22);
             this.text_ename.TabIndex = 4;
@@ -69,7 +70,8 @@
             // 
             this.lab_eName.AutoSize = true;
             this.lab_eName.BackColor = System.Drawing.Color.Transparent;
-            this.lab_eName.Location = new System.Drawing.Point(154, 113);
+            this.lab_eName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lab_eName.Location = new System.Drawing.Point(86, 162);
             this.lab_eName.Name = "lab_eName";
             this.lab_eName.Size = new System.Drawing.Size(35, 12);
             this.lab_eName.TabIndex = 3;
@@ -77,7 +79,7 @@
             // 
             // text_sign
             // 
-            this.text_sign.Location = new System.Drawing.Point(216, 207);
+            this.text_sign.Location = new System.Drawing.Point(146, 218);
             this.text_sign.Name = "text_sign";
             this.text_sign.Size = new System.Drawing.Size(100, 22);
             this.text_sign.TabIndex = 6;
@@ -86,7 +88,8 @@
             // 
             this.lab_sign.AutoSize = true;
             this.lab_sign.BackColor = System.Drawing.Color.Transparent;
-            this.lab_sign.Location = new System.Drawing.Point(156, 207);
+            this.lab_sign.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lab_sign.Location = new System.Drawing.Point(86, 218);
             this.lab_sign.Name = "lab_sign";
             this.lab_sign.Size = new System.Drawing.Size(32, 12);
             this.lab_sign.TabIndex = 5;
@@ -94,7 +97,7 @@
             // 
             // text_gender
             // 
-            this.text_gender.Location = new System.Drawing.Point(217, 160);
+            this.text_gender.Location = new System.Drawing.Point(146, 190);
             this.text_gender.Name = "text_gender";
             this.text_gender.Size = new System.Drawing.Size(100, 22);
             this.text_gender.TabIndex = 8;
@@ -103,7 +106,8 @@
             // 
             this.lab_gender.AutoSize = true;
             this.lab_gender.BackColor = System.Drawing.Color.Transparent;
-            this.lab_gender.Location = new System.Drawing.Point(157, 160);
+            this.lab_gender.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lab_gender.Location = new System.Drawing.Point(86, 190);
             this.lab_gender.Name = "lab_gender";
             this.lab_gender.Size = new System.Drawing.Size(32, 12);
             this.lab_gender.TabIndex = 7;
@@ -114,7 +118,7 @@
             this.button_say_hello.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button_say_hello.Image = ((System.Drawing.Image)(resources.GetObject("button_say_hello.Image")));
             this.button_say_hello.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_say_hello.Location = new System.Drawing.Point(139, 267);
+            this.button_say_hello.Location = new System.Drawing.Point(60, 263);
             this.button_say_hello.Name = "button_say_hello";
             this.button_say_hello.Size = new System.Drawing.Size(114, 23);
             this.button_say_hello.TabIndex = 9;
@@ -126,9 +130,9 @@
             // 
             this.button_say_hi.Image = ((System.Drawing.Image)(resources.GetObject("button_say_hi.Image")));
             this.button_say_hi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_say_hi.Location = new System.Drawing.Point(274, 267);
+            this.button_say_hi.Location = new System.Drawing.Point(180, 263);
             this.button_say_hi.Name = "button_say_hi";
-            this.button_say_hi.Size = new System.Drawing.Size(109, 23);
+            this.button_say_hi.Size = new System.Drawing.Size(114, 23);
             this.button_say_hi.TabIndex = 10;
             this.button_say_hi.Text = "Say Hi!";
             this.button_say_hi.UseVisualStyleBackColor = true;
@@ -140,7 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(512, 343);
+            this.ClientSize = new System.Drawing.Size(836, 449);
             this.Controls.Add(this.button_say_hi);
             this.Controls.Add(this.button_say_hello);
             this.Controls.Add(this.text_gender);

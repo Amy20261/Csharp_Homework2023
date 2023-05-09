@@ -1,4 +1,5 @@
-﻿using _09_Screen_Saver;
+﻿using _09_NotePad;
+using _09_Screen_Saver;
 using _11Painter;
 using _13_Guess_Number;
 using _14_Alarm_clock;
@@ -36,7 +37,7 @@ namespace _00Home
 
         private void btnLoan_Click(object sender, EventArgs e)
         {
-            
+            this.OnLoad(e);
             FrmLoan fl = new FrmLoan();
             fl.MdiParent = this;
             fl.Show();
@@ -91,9 +92,15 @@ namespace _00Home
         }        
         private void button1_Click(object sender, EventArgs e)
         {
-            frm_ScreenSaver fs=new frm_ScreenSaver();
-            fs.MdiParent = this;
+           
 
+        }
+
+        private void frmNotePad_Click(object sender, EventArgs e)
+        {
+            frmNotePad fn=new frmNotePad();
+            fn.MdiParent = this;
+            fn.Show();
         }
     }
 }

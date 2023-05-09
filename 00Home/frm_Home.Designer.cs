@@ -40,6 +40,7 @@
             this.btnAlarm = new System.Windows.Forms.Button();
             this.btnScreenSaver = new System.Windows.Forms.Button();
             this.btnPainter = new System.Windows.Forms.Button();
+            this.frmNotePad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -97,7 +98,7 @@
             // 
             // btnCal
             // 
-            this.btnCal.Location = new System.Drawing.Point(24, 220);
+            this.btnCal.Location = new System.Drawing.Point(24, 278);
             this.btnCal.Name = "btnCal";
             this.btnCal.Size = new System.Drawing.Size(68, 31);
             this.btnCal.TabIndex = 8;
@@ -142,7 +143,7 @@
             // 
             // btnScreenSaver
             // 
-            this.btnScreenSaver.Location = new System.Drawing.Point(24, 300);
+            this.btnScreenSaver.Location = new System.Drawing.Point(24, 345);
             this.btnScreenSaver.Name = "btnScreenSaver";
             this.btnScreenSaver.Size = new System.Drawing.Size(92, 31);
             this.btnScreenSaver.TabIndex = 14;
@@ -153,7 +154,7 @@
             // 
             // btnPainter
             // 
-            this.btnPainter.Location = new System.Drawing.Point(24, 373);
+            this.btnPainter.Location = new System.Drawing.Point(24, 418);
             this.btnPainter.Name = "btnPainter";
             this.btnPainter.Size = new System.Drawing.Size(92, 31);
             this.btnPainter.TabIndex = 15;
@@ -161,6 +162,17 @@
             this.btnPainter.UseVisualStyleBackColor = true;
             this.btnPainter.UseWaitCursor = true;
             this.btnPainter.Click += new System.EventHandler(this.btnPainter_Click);
+            // 
+            // frmNotePad
+            // 
+            this.frmNotePad.Location = new System.Drawing.Point(24, 381);
+            this.frmNotePad.Name = "frmNotePad";
+            this.frmNotePad.Size = new System.Drawing.Size(92, 31);
+            this.frmNotePad.TabIndex = 17;
+            this.frmNotePad.Text = "10 NotePad";
+            this.frmNotePad.UseVisualStyleBackColor = true;
+            this.frmNotePad.UseWaitCursor = true;
+            this.frmNotePad.Click += new System.EventHandler(this.frmNotePad_Click);
             // 
             // frm_Home
             // 
@@ -170,6 +182,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1204, 591);
+            this.Controls.Add(this.frmNotePad);
             this.Controls.Add(this.btnPainter);
             this.Controls.Add(this.btnScreenSaver);
             this.Controls.Add(this.btnAlarm);
@@ -205,6 +218,7 @@
         private System.Windows.Forms.Button btnAlarm;
         private System.Windows.Forms.Button btnScreenSaver;
         private System.Windows.Forms.Button btnPainter;
+        private System.Windows.Forms.Button frmNotePad;
     }
 }
 

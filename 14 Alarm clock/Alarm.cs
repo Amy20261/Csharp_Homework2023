@@ -35,7 +35,7 @@ namespace _14_Alarm_clock
             NowMinute = DateTime.Now.Minute;
             NowSecond = DateTime.Now.Second;            
 
-            if (Setted.Checked)
+           while (Setted.Checked)
             {                  
                 if (HH == NowHour && MM == NowMinute && SS == NowSecond)
                 {
@@ -43,7 +43,7 @@ namespace _14_Alarm_clock
                     {
                         sp.SoundLocation = "test.wav";
                         sp.Play();
-                        MessageBox.Show("Ring. You have to unsetted the alarm.");
+                        MessageBox.Show("Ring. Wake up.");
 
                     }catch(Exception ex)
                     {

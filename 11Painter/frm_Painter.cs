@@ -16,15 +16,16 @@ namespace _11Painter
         {
             InitializeComponent();
         }
+
         int oldX, oldY, PenPixel;
         Color penColor;
         Graphics g;
+       
         private void frm_Painter_Load(object sender, EventArgs e)
         {
-            
             PenPixel = 3;
             penColor = Color.Black;
-            g.Clear(Color.White);
+             g=this.CreateGraphics();
 
         }
         private void frm_Painter_MouseDown(object sender, MouseEventArgs e)
@@ -34,7 +35,11 @@ namespace _11Painter
         }
         private void frm_Painter_MouseMove(object sender, MouseEventArgs e)
         {
-            
+           
+            Pen p = new Pen(penColor, PenPixel);
+            g.DrawLine(p, oldX,oldY,e.X,e.Y);
+            oldX = e.X;
+            oldY = e.Y;
 
         }
 

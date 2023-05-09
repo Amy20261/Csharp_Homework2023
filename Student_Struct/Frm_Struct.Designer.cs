@@ -39,7 +39,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textScore = new System.Windows.Forms.TextBox();
             this.textShow = new System.Windows.Forms.TextBox();
             this.btnSort = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -135,7 +135,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textScore);
             this.groupBox1.Controls.Add(this.textShow);
             this.groupBox1.Location = new System.Drawing.Point(251, 32);
             this.groupBox1.Name = "groupBox1";
@@ -144,13 +144,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Grade";
             // 
-            // textBox2
+            // textScore
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 144);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 52);
-            this.textBox2.TabIndex = 1;
+            this.textScore.Location = new System.Drawing.Point(12, 144);
+            this.textScore.Multiline = true;
+            this.textScore.Name = "textScore";
+            this.textScore.Size = new System.Drawing.Size(205, 52);
+            this.textScore.TabIndex = 1;
             // 
             // textShow
             // 
@@ -209,7 +209,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnDisplay;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textScore;
         private System.Windows.Forms.TextBox textShow;
         private System.Windows.Forms.Button btnSort;
     }

@@ -70,7 +70,13 @@ namespace Student_Struct
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-
+            double[] score = new double[3];
+            score[0] = student.Chinese;
+            score[1] = student.English;
+            score[2] = student.Math;
+            double max=score.Max();
+            double min=score.Min();
+            textScore.Text = $"最高分數: {max}, 最低分:{min}";
         }
     }
 }

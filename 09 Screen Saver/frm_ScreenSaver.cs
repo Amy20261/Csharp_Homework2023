@@ -19,7 +19,7 @@ namespace _09_Screen_Saver
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void frm_ScreenSaver_Load(object sender, EventArgs e)

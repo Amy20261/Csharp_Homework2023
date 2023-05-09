@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\09 NotePad\10 NotePad.csproj">
+      <Project>{b80bebea-8fff-4106-9ff2-7b634ad7283a}</Project>
+      <Name>10 NotePad</Name>
+    </ProjectReference>
     <ProjectReference Include="..\09 Screen Saver\09 Screen Saver.csproj">
       <Project>{4fb024f4-30b7-4921-b069-aa47a09ca9cd}</Project>
       <Name>09 Screen Saver</Name>
