@@ -23,7 +23,7 @@ namespace _13_Guess_Number
         private void EnterNum_Load(object sender, EventArgs e)
         {
             Random r = new Random();
-            guess = r.Next(1, 100);
+            guess = r.Next(1, 101);
             min = 0;
             max = 100;
            
