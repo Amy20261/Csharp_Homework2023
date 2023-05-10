@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -25,8 +26,7 @@ namespace _012_Picture_Viewer
         private void pic_Click(object sender, EventArgs e)
         {
 
-        }
-        
+        }  
         
     
 
@@ -34,30 +34,28 @@ namespace _012_Picture_Viewer
         {
             DirectoryInfo dir = new DirectoryInfo("images\\");
             FileInfo[] files = dir.GetFiles();
-          
-            
-            foreach(Object file in files)
+            int num=files.Length;
+           
+            foreach(FileInfo file in files)
             {
-                filename = file.ToString();
-                for (int i=0; i<files.Length; i++) {
-                PictureBox[] pictureBox = new PictureBox[files.Length];
+                String filename=file.Name;
+                //MessageBox.Show(file.Name);
+                int i;
+                i = 0;
+                PictureBox[] pictureBox = new PictureBox[num];
+                pictureBox[i] = new PictureBox();
                 pictureBox[i].Image = Image.FromFile($"images\\{filename}");
                 pictureBox[i].SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox[i].BackColor = Color.Red;
-                pictureBox[i].Location = new Point(10 + 50*i, 45);
-                pictureBox[i].Name = $"pic_{filename}";
+                pictureBox[i].Location = new Point(10 + 300 * i, 45);
                 pictureBox[i].Size = new System.Drawing.Size(200, 150);
-                pictureBox[i].TabIndex = i;
-                    //pictureBox.Tabtop = true;
-                    this.Controls.Add(pictureBox[i]);
-                 }
+                pictureBox[i].Name = filename;
+                this.Controls.Add(pictureBox[i]);
+                i++;
 
             }
 
+         }
             
-        }
-
-        public string filename;
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
