@@ -48,7 +48,7 @@ namespace _012_Picture_Viewer
                 pictureBox[i].Name = $"pic_{filename}";
                 pictureBox[i].Size = new System.Drawing.Size(200, 150);
                 pictureBox[i].TabIndex = i;
-                    pictureBox.TabStop = true;
+                    //pictureBox.Tabtop = true;
                     this.Controls.Add(pictureBox[i]);
                  }
 
