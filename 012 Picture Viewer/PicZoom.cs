@@ -20,13 +20,7 @@ namespace _012_Picture_Viewer
 
         private void PicShow_Load(object sender, EventArgs e)
         {
-            //PictureBox.image = null;
-            PictureViewer pv= new PictureViewer();
-            //string name = pv.filename;
-            picDisplay.SizeMode = PictureBoxSizeMode.AutoSize;
-            string name = "images\\cat.jpg";
-            picDisplay.Image = Image.FromFile(name);
-            
+
         }
 
         private void picDisplay_Click(object sender, EventArgs e)

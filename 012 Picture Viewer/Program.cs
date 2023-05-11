@@ -16,7 +16,7 @@ namespace _012_Picture_Viewer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PictureViewer());
+            Application.Run(new frmPicViewer());
         }
     }
 }

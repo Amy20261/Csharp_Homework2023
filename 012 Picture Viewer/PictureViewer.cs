@@ -16,9 +16,11 @@ using System.Windows.Forms;
 
 namespace _012_Picture_Viewer
 {
-    public partial class PictureViewer : Form
+    public partial class frmPicViewer : Form
     {
-        public PictureViewer()
+        public object PictureBox1 { get; private set; }
+
+        public frmPicViewer()
         {
             InitializeComponent();
         }
@@ -34,23 +36,18 @@ namespace _012_Picture_Viewer
         {
             DirectoryInfo dir = new DirectoryInfo("images\\");
             FileInfo[] files = dir.GetFiles();
-            int num=files.Length;
-           
-            foreach(FileInfo file in files)
+          
+            for (int i = 0; i < files.Length; i++)
             {
-                String filename=file.Name;
-                //MessageBox.Show(file.Name);
-                int i;
-                i = 0;
-                PictureBox[] pictureBox = new PictureBox[num];
-                pictureBox[i] = new PictureBox();
-                pictureBox[i].Image = Image.FromFile($"images\\{filename}");
-                pictureBox[i].SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBox[i].Location = new Point(10 + 300 * i, 45);
-                pictureBox[i].Size = new System.Drawing.Size(200, 150);
-                pictureBox[i].Name = filename;
-                this.Controls.Add(pictureBox[i]);
-                i++;
+                PictureBox pictureBox_i = new PictureBox();
+                pictureBox_i.Image = Image.FromFile($"images\\{files[i].Name}");
+                pictureBox_i.Location = new Point(50+ 220 *( i%4), 50+170*(i/4));
+                pictureBox_i.Size = new Size(200, 150);
+                pictureBox_i.TabIndex = i;
+                pictureBox_i.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBox_i.Name = "images\\"+files[i].Name;
+                this.Controls.Add(pictureBox_i);
+                pictureBox_i.Click += new EventHandler(pictureBox1_Click);
 
             }
 
@@ -59,9 +56,10 @@ namespace _012_Picture_Viewer
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            //filename = "C:\\C\\CHomework\\Homework\\012 Picture Viewer\\bin\\Debug\\cat.jpg";            
-            //PicShow ps= new PicShow();
-            //ps.Show();
+            PicShow ps= new PicShow();
+            PictureBox pic=(PictureBox)sender;
+            ps.BackgroundImage= Image.FromFile(pic.Name);                     
+            ps.Show();
         }
     }
 }

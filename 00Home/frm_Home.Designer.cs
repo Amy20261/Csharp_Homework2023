@@ -41,6 +41,7 @@
             this.btnScreenSaver = new System.Windows.Forms.Button();
             this.btnPainter = new System.Windows.Forms.Button();
             this.frmNotePad = new System.Windows.Forms.Button();
+            this.btnPicViewer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // splitter1
@@ -174,6 +175,17 @@
             this.frmNotePad.UseWaitCursor = true;
             this.frmNotePad.Click += new System.EventHandler(this.frmNotePad_Click);
             // 
+            // btnPicViewer
+            // 
+            this.btnPicViewer.Location = new System.Drawing.Point(24, 455);
+            this.btnPicViewer.Name = "btnPicViewer";
+            this.btnPicViewer.Size = new System.Drawing.Size(102, 31);
+            this.btnPicViewer.TabIndex = 19;
+            this.btnPicViewer.Text = "12 Picture Viewer";
+            this.btnPicViewer.UseVisualStyleBackColor = true;
+            this.btnPicViewer.UseWaitCursor = true;
+            this.btnPicViewer.Click += new System.EventHandler(this.btnPicViewer_Click);
+            // 
             // frm_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -182,6 +194,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1204, 591);
+            this.Controls.Add(this.btnPicViewer);
             this.Controls.Add(this.frmNotePad);
             this.Controls.Add(this.btnPainter);
             this.Controls.Add(this.btnScreenSaver);
@@ -219,6 +232,7 @@
         private System.Windows.Forms.Button btnScreenSaver;
         private System.Windows.Forms.Button btnPainter;
         private System.Windows.Forms.Button frmNotePad;
+        private System.Windows.Forms.Button btnPicViewer;
     }
 }
 

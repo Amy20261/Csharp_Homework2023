@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\012 Picture Viewer\12 Picture Viewer.csproj">
+      <Project>{6fefce93-7afe-46c6-aaae-d4eb79d649aa}</Project>
+      <Name>12 Picture Viewer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\09 NotePad\10 NotePad.csproj">
       <Project>{b80bebea-8fff-4106-9ff2-7b634ad7283a}</Project>
       <Name>10 NotePad</Name>

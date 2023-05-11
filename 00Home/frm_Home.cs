@@ -1,4 +1,5 @@
-﻿using _09_NotePad;
+﻿using _012_Picture_Viewer;
+using _09_NotePad;
 using _09_Screen_Saver;
 using _11Painter;
 using _13_Guess_Number;
@@ -101,6 +102,13 @@ namespace _00Home
             frmNotePad fn=new frmNotePad();
             fn.MdiParent = this;
             fn.Show();
+        }
+
+        private void btnPicViewer_Click(object sender, EventArgs e)
+        {
+            frmPicViewer pv= new frmPicViewer();
+            pv.MdiParent = this;
+            pv.Show();
         }
     }
 }

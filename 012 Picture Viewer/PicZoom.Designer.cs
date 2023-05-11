@@ -28,35 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picDisplay = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picDisplay)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picDisplay
-            // 
-            this.picDisplay.Location = new System.Drawing.Point(35, 31);
-            this.picDisplay.Name = "picDisplay";
-            this.picDisplay.Size = new System.Drawing.Size(334, 292);
-            this.picDisplay.TabIndex = 1;
-            this.picDisplay.TabStop = false;
-            this.picDisplay.Click += new System.EventHandler(this.picDisplay_Click);
             // 
             // PicShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(421, 369);
-            this.Controls.Add(this.picDisplay);
             this.Name = "PicShow";
             this.Text = "PicZoom";
-            this.Load += new System.EventHandler(this.PicShow_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picDisplay)).EndInit();
+            this.TopMost = true;
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picDisplay;
     }
 }

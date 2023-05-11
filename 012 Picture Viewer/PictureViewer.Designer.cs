@@ -1,6 +1,6 @@
 ﻿namespace _012_Picture_Viewer
 {
-    partial class PictureViewer
+    partial class frmPicViewer
     {
         /// <summary>
         /// 設計工具所需的變數。
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // PictureViewer
+            // frmPicViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 551);
-            this.Name = "PictureViewer";
+            this.Name = "frmPicViewer";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Picture Viewer";
