@@ -131,6 +131,7 @@
             this.btnInsert.TabIndex = 9;
             this.btnInsert.Text = "Insert info.";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnRemove
             // 
@@ -140,6 +141,7 @@
             this.btnRemove.TabIndex = 10;
             this.btnRemove.Text = "Remove info.";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnClear
             // 
@@ -149,6 +151,7 @@
             this.btnClear.TabIndex = 11;
             this.btnClear.Text = "Clear all info.";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // label5
             // 

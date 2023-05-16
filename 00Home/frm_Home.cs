@@ -30,29 +30,41 @@ namespace _00Home
 
         private void btnHello_Click(object sender, EventArgs e)
         {
-            
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frmHello fh = new frmHello();
             fh.MdiParent = this;
+            
             fh.Show();
         }
 
         private void btnLoan_Click(object sender, EventArgs e)
         {
-            this.OnLoad(e);
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             FrmLoan fl = new FrmLoan();
             fl.MdiParent = this;
+            
             fl.Show();
         }
 
         private void btnPOS_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frmPOS fp = new frmPOS();
-            fp.MdiParent = this;
+            fp.MdiParent = this;            
             fp.Show();
         }
 
         private void btn_Struct_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             FrmStruct fs = new FrmStruct();
             fs.MdiParent = this;
             fs.Show();
@@ -60,6 +72,9 @@ namespace _00Home
 
         private void btnCal_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             Frm_MyCalc frm_MyCalc = new Frm_MyCalc();
             frm_MyCalc.MdiParent = this;
             frm_MyCalc.Show();
@@ -67,6 +82,9 @@ namespace _00Home
 
         private void btnGuessNum_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             Frm_GuessNum fg = new Frm_GuessNum();
             fg.MdiParent = this;
             fg.Show();
@@ -74,6 +92,9 @@ namespace _00Home
 
         private void btnAlarm_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frmAlarm fa= new frmAlarm();
             fa.MdiParent = this;
             fa.Show();
@@ -81,12 +102,18 @@ namespace _00Home
 
         private void btnScreenSaver_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frm_ScreenSaver fs = new frm_ScreenSaver();        
             fs.Show();
         }
 
         private void btnPainter_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frm_Painter fp=new frm_Painter();
             fp.MdiParent = this;
             fp.Show();
@@ -99,6 +126,9 @@ namespace _00Home
 
         private void frmNotePad_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frmNotePad fn=new frmNotePad();
             fn.MdiParent = this;
             fn.Show();
@@ -106,6 +136,9 @@ namespace _00Home
 
         private void btnPicViewer_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+
             frmPicViewer pv= new frmPicViewer();
             pv.MdiParent = this;
             pv.Show();
