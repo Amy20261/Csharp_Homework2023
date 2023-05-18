@@ -209,7 +209,7 @@
             this.labShow.Location = new System.Drawing.Point(211, 29);
             this.labShow.Name = "labShow";
             this.labShow.Size = new System.Drawing.Size(33, 12);
-            this.labShow.TabIndex = 18;
+            this.labShow.TabIndex = 50;
             this.labShow.Text = "Grade";
             // 
             // Frm_Grade

@@ -16,36 +16,30 @@ namespace Homework_loan
         
         public frmReport()
         {
-            InitializeComponent();
-                        
+            InitializeComponent();                        
            
         }
-
-
+        dataManager x = new dataManager();
+        private void frmReport_Load(object sender, EventArgs e)
+        {
+            set();
+        }    
+        private void set()
+        {
+            text_report_amount.Text = x.pv.ToString("c0");
+            text_report_year.Text = x.years.ToString();
+            text_report_rate.Text = x.yearRate.ToString();
+            textReportPMT.Text = x.result_PMT.ToString("c0");
+            textReportFV.Text = x.result_FV.ToString("c0");
+        }
         private void btnMail_Click(object sender, EventArgs e)
         {
             
-            string amount = text_report_amount.Text;
-            string year = text_report_year.Text;
-            string rate = text_report_rate.Text;
-            string PMT = textReportPMT.Text;
-            string FV = textReportFV.Text;
-
-
             string email = "amy20261@gmail.com";
             string subject = "Annuity";
-            string body = amount+";"+year+";"+rate+";"+PMT+";"+FV+";" ;
+            string body = x.pv.ToString("c0") + ";"+ x.years.ToString() + ";"+ x.yearRate.ToString() + ";"+ x.result_PMT.ToString("c0") + ";"+ x.result_FV.ToString("c0") + ";" ;
             string message = string.Format("maileto:" + email + "Subject:" + subject)+"Body:"+body;
             System.Diagnostics.Process.Start(message);
-        }
-
-        private void frmReport_Load(object sender, EventArgs e)
-        {
-            text_report_amount.Text = FrmLoan.pv.ToString("c0");
-            text_report_year.Text = FrmLoan.years.ToString();
-            text_report_rate.Text = FrmLoan.yearRate.ToString();
-            textReportPMT.Text = FrmLoan.result_PMT.ToString("c0");
-            textReportFV.Text = FrmLoan.result_FV.ToString("c0");
         }
     }
 }

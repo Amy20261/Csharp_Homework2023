@@ -52,6 +52,7 @@
     <Compile Include="Form_Hello.Designer.cs">
       <DependentUpon>Form_Hello.cs</DependentUpon>
     </Compile>
+    <Compile Include="manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_Hello.resx">

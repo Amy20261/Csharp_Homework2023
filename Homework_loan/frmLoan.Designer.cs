@@ -157,7 +157,6 @@
             this.Controls.Add(this.lab_loan_amout);
             this.Name = "FrmLoan";
             this.Text = "貸款金額計算";
-            this.Load += new System.EventHandler(this.FrmLoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

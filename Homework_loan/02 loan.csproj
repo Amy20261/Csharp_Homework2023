@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dataManager.cs" />
     <Compile Include="frmReport.cs">
       <SubType>Form</SubType>
     </Compile>
